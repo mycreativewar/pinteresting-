@@ -1,5 +1,6 @@
 <div class="jumbotron center">
-	<h1>Welcome to my app!</h1>
+	<h1 style="font-weight: 100; letter-spacing: -2px">Welcome to <span style="font-weight: 700; color: #c0392b;">Postly.</span></h1>
+	<small class="small" style="opacity: 0.5">If you are looking for obese puppies, <a target="_blank" href="http://trupanion.com/blog/wp-content/uploads/2012/01/bigboned.jpg">click here.</a></small><br /><br />
 	
 	<% if user_signed_in? %>
 		# do something
@@ -9,4 +10,6 @@
 			<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
 		</p>
 	<% end %>
+
 </div>
+
