@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Postly</title>
+  <title>Snaply</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   
 </head>
-<body>
+<body class="<%= body_class %>">
 
 	<%= render 'layouts/header' %>
 	<div class="container">
@@ -19,10 +19,10 @@
 	</div>
 
 
-	<div class="container" style="opacity: 0.5;">
+	<div class="container" id="footer" style="opacity: 0.5;">
 		<hr />
-		<small class="pull-left"> &copy; 2015 Snaply.</small>
-		<small class="pull-right"><a href="http://yourstory.com/2015/02/practo-raises-30-million/" target="_blank">Snaply&reg; raises $30 million from Sequoia Capital and Matrix Partners.</a></small>
+		<small class="pull-left"> &copy; 2015 Snaply app.</small>
+		<small class="pull-right"><a href="http://yourstory.com/2015/02/practo-raises-30-million/" target="_blank">Snaply raises $30 million from Sequoia Capital and Matrix Partners but politely declines, "We don't need your handouts."</a><br /></small>
 		
 	</div>
 	

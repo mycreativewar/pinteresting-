@@ -1,24 +1,50 @@
+<div id="home">
 <div class="jumbotron center">
 
 	<% if user_signed_in? %>
 	
-		<h1 style="font-weight: 100; letter-spacing: -2px">Welcome aboard!</h1>
+		<h1 style="font-weight: 100; letter-spacing: -2px; padding-top: 1em">Welcome aboard!</h1>
 		<h4 style="opacity: 0.6">Ready to post your first snap or what?</h4>
 		<br />
 		<p>
-			<%= link_to "Post a Snap", new_pin_path, class: "btn btn-primary btn-lg", style: "font-size: 1em; padding: 1em 2em" %>
+			<%= link_to "Post a Snap", new_pin_path, class: "btn btn-primary btn-lg", style: "font-size: 1em; padding: .8em 2em" %>
 		</p>	
 			
 	<% else %>
 	
-		<h1 style="font-weight: 100; letter-spacing: -2px">Welcome to <span style="font-weight: 700; color: #2c3e50;">snaply.</span></h1>
-	<small class="small" style="opacity: 0.5">If you are looking for obese puppies, <a target="_blank" href="http://trupanion.com/blog/wp-content/uploads/2012/01/bigboned.jpg">click here.</a></small><br /><br />
+		<h1 style="font-weight: 100; letter-spacing: -12px; font-size: 142px; padding-top: .5em"><span style="color: #2980b9"><span style="font-weight: 300;color: #fff">snaply</span> is here</span></h1>
+		<h3 style="color: #eee; font-weight: 300; letter-spacing: -0.015em">Over <strong style="color: #2980b9">186,746</strong> human beings use snaply to post photos so lame, it should be a crime.</h3>
+	
+	
+	
+	<br />
 	
 		<p>
-			<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
-			<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+			<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg", style: "font-size: 1em; padding: .8em 2em", data: { confirm: 'You really came back? Wtf..' } %>
+			<%= link_to "Join Us", new_user_registration_path, class: "btn btn-primary btn-lg", style: "font-size: 1em; padding: .8em 2em", data: { confirm: 'Are you sure?' } %>
 		</p>
+		
+		<div class="container" style="display: none; padding: 2em 4em; opacity: 0.95; background: #f9f9f9; border-radius: 10px; margin-top: 3em">
+			<div class="row">
+				
+				<div class="col-md-4">
+					<h4>Share your lamest photos.</h4>
+					<p style="font-size: 13px; font-weight: 300">Odds are 100% of your photos aren't worthy of taking up space on your media devices. </p>
+				</div>
+				
+				<div class="col-md-4">
+					<h4>Waste Time.</h4>
+					<p style="font-size: 13px; font-weight: 300">Just post a picture and within seconds receive legitimate hate.</p>
+				</div>
+				
+				<div class="col-md-4">
+					<h4>Thrive.</h4>
+					<p style="font-size: 13px; font-weight: 300">It's a new way to see the world. </p>
+				</div>
+								
+			</div>
+		</div>
 	<% end %>
 
 </div>
-
+</div><!-- END: home -->
