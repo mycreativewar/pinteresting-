@@ -16,9 +16,11 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><%= link_to 'About', about_path %></li>
 	        <% if user_signed_in? %>
-	        	<li><%= link_to 'Browse Snaps', pins_path %></li>
+	        	<li><%= link_to 'Post a Snap', new_pin_path %></li>
+	        	<li><%= link_to 'Browse', pins_path %></li>
+						<li><%= link_to 'About', about_path %></li>
+	        	
 		        <li><%= link_to 'My Account', edit_user_registration_path %></li>
 		        <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li>
 		      <% else %>
