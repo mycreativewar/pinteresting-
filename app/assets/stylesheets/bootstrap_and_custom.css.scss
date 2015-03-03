@@ -7,27 +7,65 @@ $navbar-default-bg: 					white;
 $navbar-default-brand-color:  #2980b9;
 $brand-primary: 							#2980b9;
 $jumbotron-bg: 								white;
+$navbar-inverse-link-color:		white;
 
+@import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-body.registrations-edit{background: url('http://www.ineedtext.com/FoodBlog/wp-content/uploads/2011/10/Cadillac-Event-039.jpg') center top no-repeat;
-	background-size: cover;}
-.registrations-edit #footer{visibility: hidden}
-#home{
+body.registrations-edit{
 	background: url('http://www.ineedtext.com/FoodBlog/wp-content/uploads/2011/10/Cadillac-Event-039.jpg') center top no-repeat;
+	background-size: cover;
+}
+
+.registrations-edit #footer{
+	visibility: hidden
+}
+
+#home{
+	background: #777 url('http://www.ineedtext.com/FoodBlog/wp-content/uploads/2011/10/Cadillac-Event-039.jpg') center top no-repeat;
 	background-size: cover;
 	width: 100%;
 	box-shadow: inset 0 0 5000px 1000px rgba(40,40,40,0.85);
 	margin-top:0px;
-	height: 100vh;
 	color: #fff;
+	margin-bottom: 2em;
+	padding: 1em 0;
 }
 
-#home .jumbotron{background: transparent}
-.pages-home .container{width: 100%; padding: 0px;}
-.pages-home .navbar{margin-bottom: 0px; position: fixed; top: 0; left: 0; width: 100%}
-.pages-home .navbar .container{width: 90%; }
-.pages-home #footer.container,  #footer{width: 90%; height: 100px;}
+#home h1{
+	font-weight: 100;
+	letter-spacing: -10px;
+	font-size: 120px;
+	padding-top: 0px;
+	margin-top: 0px;
+	line-height: 1em
+}
+
+#home .jumbotron{
+	background: transparent
+}
+
+.pages-home .container{
+	width: 100%;
+	padding: 0px;
+}
+
+.pages-home .navbar{
+	margin-bottom: 0px; 
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	width: 100%;
+}
+
+.pages-home .navbar .container{
+	width: 90%;
+}
+
+.pages-home #footer.container, #footer{
+	width: 90%;
+	height: 100px;
+}
 
 .center{
 	text-align: center;
@@ -59,4 +97,17 @@ hr {
   margin: 18px 0;
 }
 
-.container p{line-height: 1.5em; margin-top: 1em; color: #555}
+.container p{
+	line-height: 1.5em; 
+	margin-top: 1em; 
+	color: #555;
+}
+
+.notloggedin .navbar{
+	margin-bottom: 0px;
+}
+
+.nav .glyphicon{
+	color: #fff;
+	font-size: 11px !important;
+}
