@@ -1,4 +1,4 @@
-<div class="col-md-6 center-block" style="float: none;">
+<div class="col-md-6 center-block" style="float: none; margin-top: 2em">
 <div class="panel panel-default">
 	
 	<div class="panel-heading text-center">
@@ -10,12 +10,12 @@
 		  <%= devise_error_messages! %>
 		
 			<div class="form-group">
-		    <%= f.label :name %><br />
+		    <strong>What's Your Fucking</strong> <%= f.label :name %>?<br />
 		    <%= f.text_field :name, autofocus: true, class: "form-control" %>
 		  </div>
 		
 		  <div class="form-group">
-		    <%= f.label :email %><br />
+		    <%= f.label :email %> <em class="small">(It better not be fake.)</em><br />
 		    <%= f.email_field :email, autofocus: true, class: "form-control" %>
 		  </div>
 		
